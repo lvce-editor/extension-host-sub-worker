@@ -1,7 +1,6 @@
 import { MessagePortRpcParent } from '@lvce-editor/rpc'
 import * as CommandState from '../CommandState/CommandState.js'
 
-MessagePortRpcParent
 const rpcs = Object.create(null)
 
 export const create = async (options) => {
