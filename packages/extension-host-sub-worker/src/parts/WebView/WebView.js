@@ -1,15 +1,21 @@
+import { MessagePortRpcParent } from '@lvce-editor/rpc'
 import * as CommandState from '../CommandState/CommandState.js'
 
-const ports = Object.create(null)
+MessagePortRpcParent
+const rpcs = Object.create(null)
 
 export const create = async (options) => {
-  const port = ports[options.id]
+  const port = rpcs[options.id]
   await CommandState.execute('WebView.create', {
     ...options,
     port,
   })
 }
 
-export const setPort = (id, port) => {
-  ports[id] = port
+export const setPort = async (id, port) => {
+  const rpc = await MessagePortRpcParent.create({
+    messagePort: port,
+    commandMap: {},
+  })
+  rpcs[id] = rpc
 }
