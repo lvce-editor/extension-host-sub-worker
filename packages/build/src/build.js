@@ -58,7 +58,7 @@ await bundleJs({
   inFile: 'packages/extension-host-sub-worker/src/extensionHostSubWorkerMain.js',
   outFile: '.tmp/extension-host-sub-worker/dist/extensionHostSubWorkerMain.js',
 })
-const packageJson = await readJson(join(root, 'packages', 'extension-host-worker', 'package.json'))
+const packageJson = await readJson(join(root, 'packages', 'extension-host-sub-worker', 'package.json'))
 
 delete packageJson.scripts
 delete packageJson.devDependencies
