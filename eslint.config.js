@@ -65,6 +65,7 @@ export default tseslint.config(
       '@typescript-eslint/no-useless-constructor': 'off',
       '@typescript-eslint/no-redundant-type-constituents': 'off',
       '@typescript-eslint/no-this-alias': 'off',
+      '@typescript-eslint/no-unused-expressions': 'off',
     },
   },
   {
