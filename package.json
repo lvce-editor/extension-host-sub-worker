@@ -1,8 +1,8 @@
 {
-  "name": "@lvce-editor/extension-host-worker-monorepo",
+  "name": "@lvce-editor/extension-host-sub-worker-monorepo",
   "version": "0.0.0-dev",
   "description": "",
-  "main": "src/extensionHostWorkerMain.ts",
+  "main": "",
   "type": "module",
   "directories": {
     "test": "test"
