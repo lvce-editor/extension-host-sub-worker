@@ -21,7 +21,6 @@ export default tseslint.config(
       '**/e2e/**',
       '**/.tmp/**',
       '**/memory/**',
-      '**/extension-host-sub-worker/**',
       '**/test-integration/**',
       '**/test-integration-util/**',
       'dist',
@@ -29,7 +28,7 @@ export default tseslint.config(
       'scripts',
       'rollup.config.js',
       'eslint.config.js',
-      'packages/extension-host-worker/src/extensionHostWorkerMain.ts',
+      'packages/extension-host-sub-worker/src/extensionHostSubWorkerMain.js',
     ],
   },
   {
