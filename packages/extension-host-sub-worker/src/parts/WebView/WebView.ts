@@ -1,5 +1,5 @@
 import { MessagePortRpcParent } from '@lvce-editor/rpc'
-import * as CommandState from '../CommandState/CommandState.js'
+import * as CommandState from '../CommandState/CommandState.ts'
 
 const rpcs = Object.create(null)
 

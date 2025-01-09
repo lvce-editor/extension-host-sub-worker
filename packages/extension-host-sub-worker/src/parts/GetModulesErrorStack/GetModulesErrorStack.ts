@@ -1,4 +1,4 @@
-import * as SplitLines from '../SplitLines/SplitLines.js'
+import * as SplitLines from '../SplitLines/SplitLines.ts'
 
 const RE_AT = /^ {4}at /
 const RE_JUST_PATH = /^(?:\/|\\).*\:\d+$/
@@ -11,10 +11,10 @@ const isJustPath = (line) => {
   return RE_JUST_PATH.test(line)
 }
 
-export const getModulesErrorStack = (stderr) => {
+export const getModulesErrorStack = (stderr: string): string[] => {
   const lines = SplitLines.splitLines(stderr)
   let startIndex = -1
-  const extraLines = []
+  const extraLines: string[] = []
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i]
     if (isJustPath(line)) {

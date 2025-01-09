@@ -1,5 +1,5 @@
-import * as CleanImportError from '../CleanImportError/CleanImportError.js'
-import { VError } from '../VError/VError.js'
+import * as CleanImportError from '../CleanImportError/CleanImportError.ts'
+import { VError } from '../VError/VError.ts'
 
 export const importScript = async (path) => {
   try {

@@ -1,6 +1,6 @@
-import * as Assert from '../Assert/Assert.js'
-import * as CommandState from '../CommandState/CommandState.js'
-import * as ImportScript from '../ImportScript/ImportScript.js'
+import * as Assert from '../Assert/Assert.ts'
+import * as CommandState from '../CommandState/CommandState.ts'
+import * as ImportScript from '../ImportScript/ImportScript.ts'
 
 export const loadFile = async (path) => {
   Assert.string(path)
