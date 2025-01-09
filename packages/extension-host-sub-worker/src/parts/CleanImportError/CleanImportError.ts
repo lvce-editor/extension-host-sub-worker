@@ -1,6 +1,6 @@
-import * as GetModulesErrorStack from '../GetModulesErrorStack/GetModulesErrorStack.js'
-import * as JoinLines from '../JoinLines/JoinLines.js'
-import * as SplitLines from '../SplitLines/SplitLines.js'
+import * as GetModulesErrorStack from '../GetModulesErrorStack/GetModulesErrorStack.ts'
+import * as JoinLines from '../JoinLines/JoinLines.ts'
+import * as SplitLines from '../SplitLines/SplitLines.ts'
 
 const cleanImportSyntaxError = (error) => {
   const cleanStackLines = GetModulesErrorStack.getModulesErrorStack(error.stack)
