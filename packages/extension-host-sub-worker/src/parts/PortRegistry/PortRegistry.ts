@@ -1,9 +1,11 @@
-const rpcs = Object.create(null)
+import { Rpc } from '@lvce-editor/rpc'
 
-export const get = async (id) => {
+const rpcs: Record<string, Rpc> = Object.create(null)
+
+export const get = (id: string): Rpc => {
   return rpcs[id]
 }
 
-export const set = async (id, value) => {
+export const set = (id: string, value: Rpc): void => {
   rpcs[id] = value
 }
