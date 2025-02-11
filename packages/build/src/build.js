@@ -58,6 +58,12 @@ await bundleJs({
   inFile: 'packages/extension-host-sub-worker/src/extensionHostSubWorkerMain.ts',
   outFile: '.tmp/dist/dist/extensionHostSubWorkerMain.js',
 })
+await bundleJs({
+  inFile: 'packages/extension-host-sub-worker/src/parts/Listen/Listen.ts',
+  outFile: '.tmp/dist/dist/extensionHostSubWorkerMainApi.js',
+})
+
+await writeFile(join(root, '.tmp/dist/dist/extensionHostSubWorkerMainApi.d.ts'), `export const listen: (commandMap: any) => Promise<void>`)
 const packageJson = await readJson(join(root, 'packages', 'extension-host-sub-worker', 'package.json'))
 
 delete packageJson.scripts
