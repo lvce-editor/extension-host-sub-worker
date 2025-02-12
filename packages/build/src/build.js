@@ -76,7 +76,7 @@ delete packageJson.nodemonConfig
 packageJson.version = version
 packageJson.main = 'dist/extensionHostSubWorkerMain.js'
 packageJson.exports = {
-  api: './dist/extensionHostSubWorkerMainApi.js',
+  './api': './dist/extensionHostSubWorkerMainApi.js',
 }
 
 await writeJson(join(dist, 'package.json'), packageJson)
