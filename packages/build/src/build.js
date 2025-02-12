@@ -59,7 +59,7 @@ await bundleJs({
   outFile: '.tmp/dist/dist/extensionHostSubWorkerMain.js',
 })
 await bundleJs({
-  inFile: 'packages/extension-host-sub-worker/src/parts/Listen/Listen.ts',
+  inFile: 'packages/extension-host-sub-worker/src/parts/Api/Api.ts',
   outFile: '.tmp/dist/dist/extensionHostSubWorkerMainApi.js',
 })
 
