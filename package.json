@@ -22,16 +22,16 @@
   "author": "Lvce Editor",
   "license": "MIT",
   "devDependencies": {
-    "@eslint/js": "^9.22.0",
-    "@lerna/legacy-package-management": "^8.2.1",
-    "@lvce-editor/eslint-config": "^1.32.0",
+    "@eslint/js": "^9.39.1",
+    "@lerna/legacy-package-management": "^8.2.4",
+    "@lvce-editor/eslint-config": "^2.23.0",
     "@types/eslint__js": "^9.14.0",
-    "eslint": "^9.22.0",
-    "eslint-plugin-perfectionist": "^4.10.1",
+    "eslint": "^9.39.1",
+    "eslint-plugin-perfectionist": "^4.15.1",
     "lerna": "^8.2.1",
-    "prettier": "^3.5.3",
-    "typescript": "^5.8.2",
-    "typescript-eslint": "^8.26.1"
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.47.0"
   },
   "prettier": {
     "semi": false,
