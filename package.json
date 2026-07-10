@@ -8,7 +8,6 @@
     "test": "test"
   },
   "scripts": {
-    "postinstall": "lerna bootstrap --ci",
     "lint": "eslint .",
     "test": "lerna run test",
     "type-check": "tsc -b",
@@ -17,16 +16,17 @@
     "build:static": "node packages/build/src/build-static.js",
     "dev": "node packages/build/src/dev.js",
     "format": "prettier --write .",
-    "measure": "cd packages/memory && npm run measure"
+    "measure": "cd packages/memory && npm run measure",
+    "postinstall": "lerna bootstrap --ci"
   },
   "author": "Lvce Editor",
   "license": "MIT",
   "devDependencies": {
     "@eslint/js": "^9.39.1",
     "@lerna/legacy-package-management": "^8.2.4",
-    "@lvce-editor/eslint-config": "^2.23.0",
+    "@lvce-editor/eslint-config": "^16.2.0",
     "@types/eslint__js": "^9.14.0",
-    "eslint": "^9.39.1",
+    "eslint": "^10.6.0",
     "eslint-plugin-perfectionist": "^4.15.1",
     "lerna": "^8.2.1",
     "prettier": "^3.6.2",
