@@ -25,7 +25,7 @@
   "license": "MIT",
   "devDependencies": {
     "@eslint/js": "^9.39.1",
-    "@lvce-editor/eslint-config": "^17.5.0",
+    "@lvce-editor/eslint-config": "^17.6.0",
     "@types/eslint__js": "^9.14.0",
     "eslint": "^10.8.0",
     "eslint-plugin-perfectionist": "^4.15.1",
