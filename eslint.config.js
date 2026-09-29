@@ -21,6 +21,7 @@ export default defineConfig(
         '**/coverage/**',
         '**/server/**',
         '**/e2e/**',
+        '**/e2e-integration/**',
         '**/.tmp/**',
         '**/memory/**',
         '**/test-integration/**',
